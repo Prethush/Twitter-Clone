@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Twitter</title>
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- Header section -->
+    <header class="header">
+      <div class="left flex-25">
+        <div class="logo pointer flex justify-center items-center circle">
+          <i class="fa-brands fa-twitter"></i>
+        </div>
+      </div>
+      <div class="middle flex-50">
+        <div class="h-100 flex justify-between items-center">
+          <h3 class="bold">Home</h3>
+          <div class="top-tweets">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <g>
+                <path
+                  d="M22.772 10.506l-5.618-2.192-2.16-6.5c-.102-.307-.39-.514-.712-.514s-.61.207-.712.513l-2.16 6.5-5.62 2.192c-.287.112-.477.39-.477.7s.19.585.478.698l5.62 2.192 2.16 6.5c.102.306.39.513.712.513s.61-.207.712-.513l2.16-6.5 5.62-2.192c.287-.112.477-.39.477-.7s-.19-.585-.478-.697zm-6.49 2.32c-.208.08-.37.25-.44.46l-1.56 4.695-1.56-4.693c-.07-.21-.23-.38-.438-.462l-4.155-1.62 4.154-1.622c.208-.08.37-.25.44-.462l1.56-4.693 1.56 4.694c.07.212.23.382.438.463l4.155 1.62-4.155 1.622zM6.663 3.812h-1.88V2.05c0-.414-.337-.75-.75-.75s-.75.336-.75.75v1.762H1.5c-.414 0-.75.336-.75.75s.336.75.75.75h1.782v1.762c0 .414.336.75.75.75s.75-.336.75-.75V5.312h1.88c.415 0 .75-.336.75-.75s-.335-.75-.75-.75zm2.535 15.622h-1.1v-1.016c0-.414-.335-.75-.75-.75s-.75.336-.75.75v1.016H5.57c-.414 0-.75.336-.75.75s.336.75.75.75H6.6v1.016c0 .414.335.75.75.75s.75-.336.75-.75v-1.016h1.098c.414 0 .75-.336.75-.75s-.336-.75-.75-.75z"
+                ></path>
+              </g>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="right flex-25">
+        <div class="search-tweet flex">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" placeholder="Search Twitter" />
+        </div>
+      </div>
+    </header>
+
+    <!-- Main section -->
+    <main class="flex">
+      <!-- aside section -->
+      <aside class="aside flex-25">
+        <nav id="nav"></nav>
+        <button class="btn btn-big text-center">Tweet</button>
+      </aside>
+
+      <!-- middle section -->
+      <section class="main-middle flex-50">
+        <!-- User profile section -->
+        <div class="profile">
+          <div>
+            <div>
+              <div class="profile-img flex items-center">
+                <img src="./assets/images/me.jpg" alt="me" />
+                <input type="text" placeholder="What's happening?" />
+              </div>
+            </div>
+            <div class="tweet-sec flex justify-between items-center">
+              <div class="add-media">
+                <i class="fa-sharp fa-solid fa-photo-film"></i>
+                <i class="fa-solid fa-gift"></i>
+                <i class="fa-sharp fa-solid fa-square-poll-vertical"></i>
+                <i class="fa-regular fa-face-smile"></i>
+                <i class="fa-solid fa-calendar-days"></i>
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <button class="btn btn-small">Tweet</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Feeds -->
+        <article class="feed-container"></article>
+      </section>
+
+      <!-- Trending info section -->
+      <section class="flex-25"></section>
+    </main>
+
+    <script type="module" src="./index.js"></script>
+  </body>
+</html>
